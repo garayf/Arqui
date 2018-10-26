@@ -2,10 +2,10 @@
 
 mutation {
   createMessage(message: {
-    user1: "strings"    
-    user2: "strings"
-    subject: "3"
-    content: "Jeisson"
+    user1: "string"    
+    user2: "string"
+    subject: "string"
+    content: "string"
   }) {
     ID
     user1
@@ -26,7 +26,7 @@ query {
 }
 
 query {
-  messageByReceptor(username:"strings"){
+  messageByReceptor(username:"string"){
     ID
     user1
     user2
@@ -36,5 +36,5 @@ query {
 }
 
 mutation {
-  deleteMessage(code: "string ID")
+  deleteMessage(code: "stringID")
 }
