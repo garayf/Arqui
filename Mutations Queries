@@ -1,0 +1,40 @@
+
+
+mutation {
+  createMessage(message: {
+    user1: "strings"    
+    user2: "strings"
+    subject: "3"
+    content: "Jeisson"
+  }) {
+    ID
+    user1
+    user2
+    subject
+    content    
+  }
+}
+
+query {
+  allMessages {
+    ID
+    user1
+    user2
+    subject
+    content
+  }
+}
+
+query {
+  messageByReceptor(username:"strings"){
+    ID
+    user1
+    user2
+    subject
+    content
+  }
+}
+
+mutation {
+  deleteMessage(code: "string ID")
+}
